@@ -42,13 +42,16 @@ function AddUserPage({ setReloadPageData }) {
   }
 
   async function submitNewUserData(data) {
-    const response = await fetch("https://whereismail.herokuapp.com/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(cleanUserData(data)),
-    });
+    const response = await fetch(
+      "https://immense-thicket-07047.herokuapp.com/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(cleanUserData(data)),
+      }
+    );
     setReloadPageData(true);
     reset();
     return response;

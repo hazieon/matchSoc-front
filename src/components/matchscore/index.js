@@ -10,7 +10,7 @@ function MatchScore({
   const [compareUserScore, setCompareUserScore] = useState(0);
 
   async function saveMatch() {
-    await fetch("https://whereismail.herokuapp.com/match", {
+    await fetch("https://immense-thicket-07047.herokuapp.com/match", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
